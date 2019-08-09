@@ -1,0 +1,27 @@
+//Usuario
+export const USUARIO_LOGIN = "USUARIO_LOGIN";
+export const USUARIO_CERRAR_SESION = "USUARIO_CERRAR_SESION";
+
+//Alertas
+export const ALERTA_SHOW = "ALERTA_SHOW";
+export const ALERTA_HIDE = "ALERTA_HIDE";
+
+//MAIN CONTENT
+export const MAIN_CONTENT_CARGANDO = "MAIN_CONTENT_CARGANDO";
+
+//Notificaciones
+export const NOTIFICACIONES_SET = "NOTIFICACIONES_SET";
+
+//General
+export const GENERAL_VISIBLE = "GENERAL_VISIBLE";
+
+//Drawer
+export const DRAWER_TOGGLE = "TOGGLE_DRAWER";
+
+//Tipo auto
+export const TIPO_AUTO_SET_DATA = "TIPO_AUTO_SET_DATA";
+
+//Tipo inscripcion
+export const TIPO_INSCRIPCION_SET_DATA = "TIPO_INSCRIPCION_SET_DATA";
+export const TIPO_CONDICION_SET_DATA = "TIPO_CONDICION_SET_DATA";
+export const TIPO_INHABILITACION_SET_DATA = "TIPO_INHABILITACION_SET_DATA";

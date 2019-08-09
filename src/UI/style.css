@@ -1,0 +1,33 @@
+html {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  position: fixed; /* prevent overscroll bounce*/
+  -webkit-overflow-scrolling: touch; /* iOS velocity scrolling */
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+.switch-wrapper {
+  position: relative;
+  width: 100%;
+  flex: 1;
+}
+
+.switch-wrapper > div {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  bottom: 0px;
+  display: flex;
+}

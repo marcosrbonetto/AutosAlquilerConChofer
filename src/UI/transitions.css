@@ -1,0 +1,184 @@
+:root {
+  --anim: 0.5s;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s;
+  transition-delay: background-color 5000s, color 5000s;
+}
+
+.cross-fade-leave {
+  opacity: 1;
+}
+.cross-fade-leave.cross-fade-leave-active {
+  opacity: 0;
+  transition: opacity var(--anim) ease-in-out;
+}
+
+.cross-fade-enter {
+  opacity: 0;
+}
+.cross-fade-enter.cross-fade-enter-active {
+  opacity: 1;
+  transition: opacity var(--anim) ease-in-out;
+}
+
+.cross-fade-height {
+  transition: height var(--anim) ease-in-out;
+}
+
+/* Fade out, then fade in transition */
+
+.fade-wait-leave,
+.fade-wait-delay-leave {
+  opacity: 1;
+}
+.fade-wait-leave.fade-wait-leave-active,
+.fade-wait-delay-leave.fade-wait-delay-leave-active {
+  opacity: 0;
+  transition: opacity var(--anim) ease-in;
+}
+
+.fade-wait-enter,
+.fade-wait-delay-enter {
+  opacity: 0;
+}
+.fade-wait-enter.fade-wait-enter-active,
+.fade-wait-delay-enter.fade-wait-delay-enter-active {
+  opacity: 1;
+  /* Delay the enter animation until the leave completes */
+  transition: opacity var(--anim) ease-in var(--anim);
+}
+
+.fade-wait-height {
+  transition: height var(--anim) ease-in-out;
+}
+.fade-wait-delay-height {
+  /* Delay the height animation until the leave completes */
+  transition: height var(--anim) ease-in-out var(--anim);
+}
+
+/* Carousel-like transition */
+
+.carousel-swap-leave {
+  transition: transform var(--anim) ease-in-out;
+  transform: translate(0, 0);
+}
+.carousel-swap-leave-active {
+  transform: translate(-100%, 0);
+}
+
+.carousel-swap-enter {
+  transition: transform var(--anim) ease-in-out;
+  transform: translate(100%, 0);
+}
+.carousel-swap-enter-active {
+  transform: translate(0, 0);
+}
+
+.carousel-swap-height {
+  transition: height var(--anim) ease-in-out;
+}
+
+/* Roll-up transition */
+
+.roll-up-leave {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+.roll-up-leave.roll-up-leave-active {
+  transform: translate(-100%, 0);
+  opacity: 0;
+  transition: opacity var(--anim) ease-in-out, transform var(--anim) ease-in-out;
+}
+
+.roll-up-enter {
+  transform: translate(100%, 0);
+  opacity: 0;
+}
+.roll-up-enter.roll-up-enter-active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: opacity var(--anim) ease-in-out, transform var(--anim) ease-in-out;
+}
+
+.roll-up-height {
+  transition: height var(--anim) ease-in-out;
+}
+
+/* Mover-izquierda transition */
+
+.mover-izquierda-leave {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+.mover-izquierda-leave.mover-izquierda-leave-active {
+  transform: translate(100%, 0);
+  opacity: 0;
+  transition: opacity var(--anim) ease-in-out, transform var(--anim) ease-in-out;
+}
+
+.mover-izquierda-enter {
+  transform: translate(-100%, 0);
+  opacity: 0;
+}
+.mover-izquierda-enter.mover-izquierda-enter-active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: opacity var(--anim) ease-in-out, transform var(--anim) ease-in-out;
+}
+
+.mover-izquierda-height {
+  transition: height var(--anim) ease-in-out;
+}
+
+/* Mover derecha transition */
+
+.mover-derecha-leave {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+.mover-derecha-leave.mover-derecha-leave-active {
+  transform: translate(-100%, 0);
+  opacity: 0;
+  transition: opacity var(--anim) ease-in-out, transform var(--anim) ease-in-out;
+}
+
+.mover-derecha-enter {
+  transform: translate(100%, 0);
+  opacity: 0;
+}
+.mover-derecha-enter.mover-derecha-enter-active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: opacity var(--anim) ease-in-out, transform var(--anim) ease-in-out;
+}
+
+.mover-derecha-height {
+  transition: height var(--anim) ease-in-out;
+}
+
+/* Fade with width transition */
+
+.fade-fast-leave {
+  opacity: 1;
+}
+.fade-fast-leave.fade-fast-leave-active {
+  opacity: 0;
+  transition: opacity var(--anim) ease-in-out;
+}
+
+.fade-fast-enter {
+  opacity: 0;
+}
+.fade-fast-enter.fade-fast-enter-active {
+  opacity: 1;
+  transition: opacity var(--anim) ease-in-out;
+}
+
+.fade-fast-height {
+  transition: height var(--anim) ease-in-out, width var(--anim) ease-in-out;
+}
